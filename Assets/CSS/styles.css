@@ -1,0 +1,344 @@
+
+/*This ensures each feature covers 100% of the webpage area*/
+html, body{
+	height: 100%;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+.shows{
+	background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+	color: brown;
+}
+
+.shows2{
+	padding: 1.0785rem 1rem;
+}
+
+.nav-link{
+	font-family: 'Roboto' !important;
+	color: white; 
+}
+
+
+#navbar .navbar-brand{
+	color: black !important;
+}
+
+#stage{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index:0;
+}
+
+#wrapper-top{
+	/*background: url(bg-images/stage1.jpg) 45% 50% no-repeat;*/
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+}
+
+#stage .container{
+	max-height: 100%;
+	margin-bottom: 15px;
+}
+
+#stage-caption{
+	font-family: 'Days One', sans-serif !important;
+	margin-left: 100px;
+	margin-top: 175px;
+	color: white !important;
+	text-shadow: 1px 3px 5px black;
+	width: 400px;
+	position: absolute;
+	margin-bottom: 15px;
+}
+
+
+
+/* using min-height here not sure how it's going to affect the whole homepage but this solved the problem with the social media icons*/
+#feature-one{
+	max-height: 100%;
+	height: 100%;
+	background-image: linear-gradient(rgba(255,255,255,0.45),rgba(255,255,255,0.45)), url("bg-images/feature1.jpg");
+	background-position: center 24%;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+	
+/*this gives the blue ontop of picture of heidi david*/
+.bg-mask{
+	background-color: #0a205b;
+	opacity: 0.8;
+	position: absolute;
+	width: 100%;
+	max-height: 100%;
+	min-height: 100%;
+	z-index: -1;
+}
+
+#feature-one .row{
+	color: white;
+	z-index: 1;
+	padding-bottom: 30px;
+}
+
+#feature-one .row h3{
+	padding-left: 5px;
+	padding-bottom: 30px;
+}
+
+#feature-one .row h1{
+	padding-top: 90px;
+	padding-left: 18%;
+	padding-bottom: 50px;
+}
+
+#feature-two{
+	height: 100%;
+	padding-top: 3%;
+	border-bottom: solid thin grey;
+}
+
+#feature-two h4{
+	border-bottom: solid thin grey;
+	color: #004e6b;
+}
+
+#feature-two h4:hover{
+	box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+hr{
+	height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+/*overflow specifies what to do when window sizing starts covering the container*/
+#feature-three{
+	height: 70%;
+	overflow: hidden;
+}
+
+#feature-three .title{
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+.sponsorship{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	padding: 1em 2em;
+	margin-bottom: 20px;
+}
+
+#IBM{
+	height: 140px;
+	width: 220px;
+}
+#IBM img{
+	width: 100%;
+	height: 100%;
+	
+}
+
+#carleton{
+	height: 140px;
+	width: 220px;
+	padding: 0px 25px;
+}
+
+#carleton img{
+	height: 100%;
+	width: 100%;
+}
+
+#uOttawa{
+	height: 140px;
+	width: 220px;
+	padding: 0 25px;
+}
+#uOttawa img{
+	width: 100%;
+	height: 100%;
+	
+}
+
+#spectrum img{
+	display: block;
+	margin-left: 43%;
+	width: 300px;
+	height: 140px;
+	margin-top: 10px;
+}
+
+#spirit img{
+	display: block;
+	width: 300px;
+	height: 140px;
+	margin-left: 40px;
+}
+
+.hover-grow:hover {
+	box-shadow: 3px 3px 3px px yellow;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.2);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
+}
+
+#main-footer{
+	height: 20%;
+}
+
+/*Had to override because of bootstrap*/
+#main-footer a{
+	color: white;
+}
+
+#main-footer #img{
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	padding-top: 0;
+	padding-left: 40px;
+}
+
+@font-face {
+    font-family: 'si';
+    src: url('socicon.eot');
+    src: url('socicon.eot?#iefix') format('embedded-opentype'),
+         url('socicon.woff') format('woff'),
+         url('socicon.ttf') format('truetype'),
+         url('socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow:hidden;
+    padding-left: 22%;
+    padding-top: 40px;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 55px;
+    -webkit-border-radius: 49px;
+    -moz-border-radius: 49px;
+    border-radius: 49px;
+    margin-right: 24px;
+    color: #ffffff;
+    background-color: #auto;
+}
+
+.soc a:hover {
+    z-index: 2;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-facebook {
+    background-color: #3e5b98;
+}
+.soc-facebook:before {
+    content:'\e041';
+}
+.soc-twitter {
+    background-color: #4da7de;
+}
+.soc-twitter:before {
+    content:'\e040';
+}
+.soc-youtube {
+    background-color: #e02a20;
+}
+.soc-youtube:before {
+    content:'\e051';
+}
+.soc-instagram {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 208%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+.soc-instagram:before {
+    content:'\e057';
+}
+.soc-linkedin {
+    background-color: #3371b7;
+}
+.soc-linkedin:before {
+    content:'\e049';
+}
+
+#main-footer{
+	background-color: #262F36;
+	color:white;
+	padding: 3rem 0;
+	font-size: 0.8rem;
+
+}
