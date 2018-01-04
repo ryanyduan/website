@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Icon that appears in the tab -->
 	<link rel="icon" href="assets/CSS/logos/logo.png">
 	<title>Ottawa Robotics Competition</title>
 	 <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
 	<!-- CSS -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -23,7 +24,7 @@
     <img src="assets/CSS/logos/logo.png" width="30" height="30" class="d-inline-block align-top">
     ORC
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -32,18 +33,18 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" >
           About Us
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu">
           <a class="dropdown-item" href="history.html">History</a>
           <a class="dropdown-item" href="team.html">Team</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" >
           Registration
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu">
           <a class="dropdown-item" href="#">Competition</a>
           <a class="dropdown-item" href="#">Workshops</a>
           <a class="dropdown-item" href="#">Mentorship</a>
@@ -52,15 +53,14 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" >
           Challenges
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu">
           <a class="dropdown-item" href="#">Lego</a>
           <a class="dropdown-item" href="#">Arduino</a>
           <a class="dropdown-item" href="#">Resources</a>
       </li>
-
       <li class="nav-item">
         <a class="nav-link" href="#">Patrons</a>
       </li>
@@ -91,6 +91,7 @@
 			<h3 class="lead text-center">The annual IEEE Ottawa Robotics Competition encourages students from Grades 5 to 12 to develop an early interest in science, technology, and engineering.</h3>
 			<p class="lead text-center"> In teams, students will design and build an autonomous robot using LEGO® MINDSTORM kits to compete in a full day event filled with exciting challenges. In addition, teams will be judged on a written report and a poster presentation documenting their designs.</p>
 		</div>
+		<div class="row">
 		<ul class="soc">
 	    		<li><a class="soc-facebook" href="https://www.facebook.com/IEEEORC" target="_blank"></a></li>
 	    		<li><a class="soc-twitter" href="https://twitter.com/IEEEORC" target="_blank"></a></li>
@@ -98,6 +99,7 @@
 	    		<li><a class="soc-instagram" href="https://www.instagram.com/IEEEORC/" target="_blank"></a></li>
 	    		<li><a class="soc-linkedin soc-icon-last" href="https://www.linkedin.com/company/ieee-ottawa-robotics-competition-comp%C3%A9tition-de-robotique-d%27ottawa-d%27ieee/" target="_blank"></a></li>
 			</ul>	
+		</div>
 	</div>
 </section>
 
@@ -135,29 +137,29 @@
 		<h1 class="title text-center">Proudly Sponsored by</h1>
 			<div class="sponsorship row">
 				<div class="col-sm-4" id="IBM">
-					<a href="IBM.com" target="_blank">
+					<a href="https://www.ibm.com/ca-en/" target="_blank">
 						<img src="assets/CSS/logos/logo-IBM.png" class="hover-grow">
 					</a>
 				</div>
 				<div class="col-sm-4" id="carleton">
-					<a href="IBM.com" target="_blank">
+					<a href="https://carleton.ca/engineering-design/" target="_blank">
 						<img src="assets/CSS/logos/logo-carleton.png" class="hover-grow">
 					</a>
 				</div>
 				<div class="col-sm-4" id="uOttawa">
-					<a href="IBM.com" target="_blank">
+					<a href="https://engineering.uottawa.ca/" target="_blank">
 						<img src="assets/CSS/logos/logo-uOttawa.png" class="hover-grow">
 					</a>
 				</div>
 			</div>
 			<div class="sponsorship row">
 				<div class="col-sm-6" id="spectrum">
-				<a href="IBM.com" target="_blank">
+				<a href="https://spectrum-nasco.ca/" target="_blank">
 					<img src="assets/CSS/logos/logo-spectrum.png" class="hover-grow">
 				</a>
 				</div>
 				<div class="col-sm-6" id="spirit">
-				<a href="IBM.com" target="_blank">
+				<a href="https://www.spiritofmath.com/" target="_blank">
 					<img src="assets/CSS/logos/logo-spirit-of-math.png" class="hover-grow">
 				</a>
 				</div>
@@ -206,7 +208,7 @@
 			header.css({background: backgrounds[current], backgroundPosition: "45% 50%", backgroundRepeat: "no-repeat", backgroundSize: "cover"});			
 
 			function changeBackground(){
-				header.animate({"opacity": 1}, 2000, function(){
+				header.animate({"opacity": 1}, 3000, function(){
 					$("#stage").css({background: backgrounds[current], backgroundPosition: "45% 50%", backgroundRepeat: "no-repeat", backgroundSize: "cover"});
 					current++;
 					current %= backgrounds.length;
@@ -214,11 +216,13 @@
 					header.css({background: backgrounds[current], backgroundPosition: "45% 50%", backgroundRepeat: "no-repeat", backgroundSize: "cover"});
 				});
 			};
-			// call the function first to get the first image to dissapear after 5 seconds cause if i don't call it, it'll last 10 seconds before changing
+			// call the function first to get the first image to dissapear after 7 seconds cause if i don't call it, it'll last 14 seconds before changing
 			changeBackground();
-			setInterval(changeBackground, 5000);
 
- // Script that gets navbar to change properties when window is scrolled - change at 720px and 2160px 
+			
+			setInterval(changeBackground, 7000);
+
+ // Script that gets navbar to change properties when window is scrolled - change at 720px and 2160px (2160 so navbar covers bottom-border of feature-two when you scroll onto sponsorhip page)
 
 		  	$(window).scroll(function() {
 		  		if($(window).scrollTop()>2189){
